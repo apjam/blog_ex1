@@ -1,5 +1,5 @@
-Пример использования router
-
+# Пример использования Router
+```php
 $routes = [
     '/' =>  'homepage',
     'show' =>  'show',
@@ -13,9 +13,9 @@ $routes = [
 
 $router = new Router($routes);
 include $router->start() . '.php';
-
-Пример использования QueryBilder
-
+```
+# Пример использования QueryBilder
+```php
 $db = new QueryBilder(Connection::start(
             'mysql:host=localhost;dbname=lesson-2',
             'root',
@@ -25,3 +25,4 @@ $db = new QueryBilder(Connection::start(
 $db->update('posts',[
 		'title' => 'new title',
 ], 3);
+```
